@@ -1,14 +1,10 @@
 # MSCS 532 Assignment 6
 
 **Student:** Ashish Mahajan
-
 **Course:** MSCS 532-B01 - Algorithms and Data Structures
-
 **Instructor:** Dr. Michael Solomon
 
 **Assignment:** Assignment 6 - Medians and Order Statistics & Elementary Data Structures
-
-**Repository:** [MSCS532_Assignment_6_AM](https://github.com/AshishM26/MSCS532_Assignment_6_AM)
 
 ## Overview
 
@@ -17,9 +13,7 @@ This project implements two algorithms for selecting the kth smallest value with
 - deterministic Median of Medians with worst-case `Theta(n)` time;
 - randomized Quickselect with expected `Theta(n)` time.
 
-Both algorithms use one-based ranks and a shared three-way partition that handles duplicate values directly. The project also implements a dynamic array, matrix, array-based stack, circular array queue, and singly linked list from scratch. Tests, reproducible benchmarks, charts, and a generic cloud-operations demonstration connect the theoretical analysis to observed behavior.
-
-The detailed design, proofs, empirical analysis, applications, and references are in [report.md](report.md).
+Both algorithms use one-based ranks and a shared three-way partition that handles duplicate values directly. The project also implements a dynamic array, matrix, array-based stack, circular array queue, and singly linked list from scratch.
 
 ## Assignment Requirements and Learning Objectives
 
@@ -83,14 +77,6 @@ MSCS532_Assignment_6_AM/
 
 ## Setup
 
-Python 3.11 or newer is recommended. The algorithms and data structures use only the standard library; Matplotlib is used to create charts.
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python3 -m pip install -r requirements.txt
-```
-
 ## Run the Tests
 
 ```bash
@@ -109,6 +95,17 @@ python3 benchmarks/benchmark_data_structures.py
 ```
 
 Reduced selection runs warn that they overwrite the full result files. The committed results contain the required full runs: 144 selection rows and 40 data-structure rows, each with five completed trials and no failures.
+
+## Validation Summary
+
+| Validation evidence | Result |
+|---|---|
+| Unit and contract tests | 93 of 93 passed |
+| Selection benchmark | 144 unique combinations; five trials each; zero failures |
+| Data-structure benchmark | 40 unique combinations; five trials each; zero failures |
+| Cloud-operations demonstration | Completed with matching deterministic and randomized order statistics |
+| Generated artifacts | Two CSV files and three readable PNG charts |
+| Repository hygiene | No prohibited selection helpers, cache files, compiled Python files, or absolute local paths |
 
 ## Run the Demonstration
 
@@ -164,7 +161,7 @@ No statistical significance test was performed, and the measured constants are s
 
 ## Version Control
 
-The local history separates repository setup, algorithms, tests and benchmark framework, data structures, demonstrations and data-structure benchmarks, generated results, and final documentation. The work remains unpushed until human review.
+The local history separates repository setup, algorithms, tests and benchmark framework, data structures, demonstrations and data-structure benchmarks, generated results, and final documentation.
 
 ## References
 
